@@ -1,6 +1,23 @@
 # Aura Dental Clinic Management & Patient Engagement Platform
 
-A modern, production-ready, full-stack web application designed to streamline clinic operations, automate appointment scheduling, and enhance patient engagement.
+[![Repository](https://img.shields.io/badge/GitHub-JeevananthanV%2Fdental__clinic-blue?logo=github)](https://github.com/JeevananthanV/dental_clinic)
+[![Next.js](https://img.shields.io/badge/Next.js-16%20(App%20Router)-black?logo=nextdotjs&logoColor=white)](https://nextjs.org)
+[![React](https://img.shields.io/badge/React-19-61DAFB?logo=react&logoColor=white)](https://react.dev)
+[![Express](https://img.shields.io/badge/Backend-Node%20%2B%20Express-339933?logo=express&logoColor=white)](https://expressjs.com)
+[![MongoDB](https://img.shields.io/badge/Database-MongoDB%20%2B%20Mongoose-47A248?logo=mongodb&logoColor=white)](https://www.mongodb.com)
+
+A modern, production-ready, full-stack dental clinic web application designed to streamline clinic operations, automate appointment scheduling, and enhance patient engagement.
+
+---
+
+## 🔗 Repository Links
+
+| Detail | Link |
+|---|---|
+| **GitHub Repository** | [https://github.com/JeevananthanV/dental_clinic](https://github.com/JeevananthanV/dental_clinic) |
+| **Author** | [Jeevananthan V](https://github.com/JeevananthanV) |
+| **Frontend Portal** | `http://localhost:3000` |
+| **Backend API** | `http://localhost:5000/api` |
 
 ---
 
@@ -47,6 +64,7 @@ A modern, production-ready, full-stack web application designed to streamline cl
 ## 📦 Project Directory Structure
 
 ```
+Dental_Clinic/
 ├── app/                  # Next.js App Router (Pages, layouts, styles)
 ├── components/           # Reusable React components
 ├── constants/            # Client-side constants & static configurations
@@ -62,6 +80,8 @@ A modern, production-ready, full-stack web application designed to streamline cl
 │   ├── services/         # Third-party integrations (Nodemailer, Cloudinary)
 │   ├── validators/       # Input request validators (Joi)
 │   └── server.js         # Backend entry point
+├── CASE_STUDY.md         # Comprehensive clinic case study
+└── README.md
 ```
 
 ---
@@ -76,45 +96,33 @@ Before you begin, ensure you have the following installed:
 
 ## 🔧 Installation & Setup
 
+### Clone Repository
+
+```bash
+git clone https://github.com/JeevananthanV/dental_clinic.git
+cd dental_clinic
+```
+
 ### 1. Setup the Environment Variables
 
-Configure both the Client and Server by creating environment files from the provided examples.
-
 #### Client (Root Folder)
-Create a `.env` or `.env.local` file at the root directory and copy the contents of `.env.example`:
+Create `.env.local` based on `.env.example`:
 ```bash
 NEXT_PUBLIC_API_URL=http://localhost:5000/api
 ```
 
 #### Server (`/server` Folder)
-Navigate to the `/server` folder, create a `.env` file, and fill in the placeholders based on `server/.env.example`:
+Navigate to `/server` and create `.env` based on `server/.env.example`:
 ```bash
-# Server port & details
 PORT=5000
 NODE_ENV=development
 FRONTEND_URL=http://localhost:3000
-
-# Database
 MONGO_URI=your_mongodb_connection_string
-
-# Authentication
 JWT_SECRET=your_jwt_secret_key
 JWT_REFRESH_SECRET=your_jwt_refresh_secret_key
-
-# Third-party Services (Cloudinary & SMTP Email)
-CLOUDINARY_CLOUD_NAME=your_cloudinary_cloud_name
-CLOUDINARY_API_KEY=your_cloudinary_api_key
-CLOUDINARY_API_SECRET=your_cloudinary_api_secret
-
-EMAIL_HOST=smtp.mailtrap.io
-EMAIL_PORT=2525
-EMAIL_USER=your_smtp_user
-EMAIL_PASS=your_smtp_password
 ```
 
 ### 2. Run the Application
-
-You must run the Frontend and the Backend concurrently.
 
 #### Start Backend Server
 ```bash
@@ -124,10 +132,20 @@ npm run dev
 ```
 
 #### Start Frontend Client
-In a new terminal window, navigate back to the root directory:
+In a new terminal window:
 ```bash
 npm install
 npm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the application running.
+Open [http://localhost:3000](http://localhost:3000) to view the application.
+
+---
+
+## 👨‍💻 Author
+
+**Jeevananthan V** — [@JeevananthanV](https://github.com/JeevananthanV)
+
+## License
+
+MIT
